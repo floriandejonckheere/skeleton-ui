@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Skeleton Extras</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="A set of UI components built on Skeleton">
+    <meta name="author" content="Florian Dejonckheere">
+
+    <!-- Dependencies: Font Awesome, jQuery -->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <script type="text/JavaScript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Skeleton UI -->
+    <link rel="stylesheet" type="text/css" href="../css/skeleton-ui.css">
+
+    <script type="text/JavaScript" src="../js/skeleton-ui.js"></script>
+
+
+    <!-- Custom page styles and scripts -->
+    <style type="text/css">
+      .container {
+        margin-top: 3em;
+      }
+
+      .title {
+        margin-top: 2em;
+      }
+
+      p {
+        text-align: justify;
+      }
+    </style>
+    <script type="text/JavaScript">
+      $(document).ready(function() {
+        $('#range-horiz').on('input', function() { $('#range-vert').val(this.value); });
+        $('#range-vert').on('input', function() { $('#range-horiz').val(this.value); });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Skeleton Extras</h1>
+      <p>
+        Skeleton UI is a CSS UI framework built on <a href="http://getskeleton.com">Skeleton</a>. It extends upon the beautiful and minimalist responsive CSS boilerplate by adding a plethora of components, with minimalist scripted interactions and animations.
+      </p>
+
+      <h3>Showcase</h3>
+      <h5 class="title">Buttons</h5>
+      <p>Primary, regular and icon buttons are already available in Skeleton.</p>
+      <p>
+        <a href="javascript:void(0);" class="button button-primary">Primary</a>
+        <button class="button">Button</button>
+        <button class="button"><i class="fa fa-shopping-cart"></i> Icon button</button>
+        <!-- Use the 'disabled' attribute or add the 'disabled' class -->
+        <button class="button" disabled>Disabled button</button>
+      </p>
+
+      <h5 class="title">Checkboxes and radio buttons</h5>
+      <div class="row">
+        <div class="six columns">
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-enabled">
+            <label for="checkbox-enabled">Regular checkbox</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-checked" checked>
+            <label for="checkbox-checked">Checked checkbox</label>
+          </div>
+
+          <div class="checkbox">
+            <!-- Use the 'disabled' attribute or add the 'disabled' class -->
+            <input type="checkbox" id="checkbox-disabled" disabled>
+            <label for="checkbox-disabled">Disabled checkbox</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-checked-disabled" checked disabled>
+            <label for="checkbox-checked-disabled">Checked disabled checkbox</label>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="radio">
+            <input type="radio" id="radio-enabled">
+            <label for="radio-enabled">Regular radio button</label> (<a href="javascript:void(0);" onClick="document.getElementById('radio-enabled').checked = false;">uncheck</a>)
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="radio-checked" checked>
+            <label for="radio-checked">Checked radio button</label>
+          </div>
+
+          <div class="radio">
+            <!-- Use the 'disabled' attribute or add the 'disabled' class -->
+            <input type="radio" id="radio-disabled" disabled>
+            <label for="radio-disabled">Disabled radio button</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="radio-checked-disabled" checked disabled>
+            <label for="radio-checked-disabled">Checked disabled radio button</label>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="title">Switches</h5>
+      <div class="row">
+        <div class="twelve columns">
+          <div class="switch">
+            <input type="checkbox" id="switch-enabled">
+            <span class="switch-button"></span>
+            <label for="switch-enabled">Regular switch</label>
+          </div>
+
+          <div class="switch">
+            <input type="checkbox" id="switch-checked" checked>
+            <span class="switch-button"></span>
+            <label for="switch-checked">Checked switch</label>
+          </div>
+
+          <div class="switch">
+            <!-- Use the 'disabled' attribute or add the 'disabled' class -->
+            <input type="checkbox" id="switch-disabled" disabled>
+            <span class="switch-button"></span>
+            <label for="switch-disabled">Disabled switch</label>
+          </div>
+
+          <div class="switch">
+            <input type="checkbox" id="switch-checked-disabled" checked disabled>
+            <span class="switch-button"></span>
+            <label for="switch-checked-disabled">Checked disabled switch</label>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="title">Range</h5>
+      <div class="row">
+        <div class="twelve columns">
+          <input type="range" min="0" max="100" id="range-horiz">
+          <!-- Use the 'disabled' attribute or add the 'disabled' class -->
+          <input type="range" min="0" max="100" disabled>
+          <!-- Add the 'vertical' class for vertical range sliders -->
+          <input type="range" min="0" max="100" class="vertical" id="range-vert">
+          <input type="range" min="0" max="100" class="vertical" disabled>
+        </div>
+      </div>
+
+      <h5 class="title">Dropdown</h5>
+      <div class="row">
+        <label class="select">
+          <select>
+            <option>First option</option>
+            <option selected>Second option</option>
+            <option>Third option</option>
+            <option>Fourth option</option>
+            <option>Fifth option</option>
+          </select>
+        </label>
+      </div>
+
+      <h5 class="title">Badges</h5>
+      <p>
+        Badges indicate extra attributes<span class="badge">new</span>
+        <br>
+        Custom colors on demand<span class="badge" style="background-color: red; vertical-align: super;">hot</span>
+      </p>
+
+      <h5 class="title">Alerts</h5>
+      <p>
+        <div class="alert">
+          This is an alert. It informs the user that there is something requiring his attention.
+          <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
+        </div>
+        <div class="alert" style="background-color: red;">
+          Defining custom colors is up to you. You can dismiss this alert by clicking on the close button.
+          <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
+        </div>
+      </p>
+
+      <h5 class="title">Panels</h5>
+      <div class="row">
+        <div class="six columns">
+          <div class="panel">
+            <div class="row">
+              <div class="twelve columns">
+                This is a panel. You can put text, images, forms and many other elements in here. This text only serves to fill the space a bit.
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="six columns">
+                <a href="javascript:void(0);" class="button button-primary" style="width: 100%;">Accept</a>
+              </div>
+              <div class="six columns">
+                <a href="javascript:void(0);" class="button" style="width: 100%;">Reject</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="panel">
+            <div class="row">
+              <div class="twelve columns">
+                <h5>Sign in to continue</h5>
+                <div class="alert" style="background: red;">
+                  <i class="fa fa-exclamation-triangle"></i> Invalid username or password
+                  <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                <label for="username">Username</label>
+                <input type="text" class="u-full-width" placeholder="Username" id="username" name="username">
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                <label for="password">Password</label>
+                <input type="password" class="u-full-width" placeholder="Password" id="password" name="password">
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                <input type="button" class="button button-primary" value="Sign in">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
