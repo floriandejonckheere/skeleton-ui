@@ -1,7 +1,5 @@
 # Skeleton UI
 
-A lightweight CSS toolkit built on [Skeleton](http://getskeleton.com/). It aims to provide simple to use responsive components that are not bloated with unnecessary features. This project replaces Skeleton Extras.
-
-Currently there is no guarantee the toolkit will work on any browsers other than Firefox 37 and Chromium 42.
+A lightweight CSS UI framework built on [Skeleton](http://getskeleton.com/). It extends upon the beautiful and minimalist responsive CSS boilerplate by adding a plethora of components, with minimalist scripted interactions and animations.
 
 [Demo](https://floriandejonckheere.be/skeleton-ui/)
