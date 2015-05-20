@@ -11,7 +11,7 @@
  *
  * */
 /**
- * base.css - Base styles
+ * base - Base styles
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
@@ -62,7 +62,97 @@ hr {
   clear: both;
 }
 /**
- * grid.css - Grid system
+ * block - Block text elements
+ *
+ * Florian Dejonckheere <florian@floriandejonckheere.be>
+ *
+ * */
+/**
+ * Lists
+ *
+ * */
+ul {
+  list-style: circle inside;
+}
+ol {
+  list-style: decimal inside;
+  padding-left: 0;
+  margin-top: 0;
+}
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+ul ul,
+ul ol {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+li {
+  margin-bottom: 1rem;
+}
+/**
+ * Tables
+ *
+ * */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+/**
+ * Code
+ *
+ * */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+/**
+ * Form elements
+ *
+ * */
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+/**
+ * grid - Grid system
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
@@ -207,7 +297,7 @@ hr {
   }
 }
 /**
- * typography.css - Typography
+ * typography - Typography
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
@@ -277,7 +367,7 @@ p {
   margin-top: 0;
 }
 /**
- * skeleton-animations.css - Add animations to components
+ * skeleton-animations - Add animations to components
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
@@ -294,34 +384,17 @@ p {
   -o-transition: all 0.1s ease-in-out;
 }
 /**
- * button.less - Buttons
+ * button - Buttons
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
  * */
+/**
+ * Regular buttons
+ *
+ * */
 .button,
 button {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbbbbb;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -346,15 +419,41 @@ button:hover {
   border-color: #888888;
   outline: 0;
 }
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
+.button:focus,
+button:focus {
   color: #333333;
   border-color: #888888;
   outline: 0;
 }
-.button:focus,
-button:focus {
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
   color: #333333;
   border-color: #888888;
   outline: 0;
@@ -366,119 +465,51 @@ input[type="button"]:focus {
   border-color: #888888;
   outline: 0;
 }
+/**
+ * Primary buttons
+ *
+ * */
 .button.button-primary,
 button.button-primary {
-  color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
-}
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  color: #fff;
+  color: #ffffff;
   background-color: #33c3f0;
   border-color: #33c3f0;
 }
 .button.button-primary:hover,
 button.button-primary:hover {
-  color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
-}
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #1eaedb;
   border-color: #1eaedb;
 }
 .button.button-primary:focus,
 button.button-primary:focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #1eaedb;
   border-color: #1eaedb;
 }
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-  color: #fff;
+input.button-primary[type="submit"],
+input.button-primary[type="reset"],
+input.button-primary[type="button"] {
+  color: #ffffff;
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+input.button-primary[type="submit"]:hover,
+input.button-primary[type="reset"]:hover,
+input.button-primary[type="button"]:hover {
+  color: #ffffff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+input.button-primary[type="submit"]:focus,
+input.button-primary[type="reset"]:focus,
+input.button-primary[type="button"]:focus {
+  color: #ffffff;
   background-color: #1eaedb;
   border-color: #1eaedb;
 }
 /**
- * code.css - Preformatted text
- *
- * Florian Dejonckheere <florian@floriandejonckheere.be>
- *
- * */
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
-}
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre;
-}
-/**
- * form.css - Various form elements
- *
- * Florian Dejonckheere <florian@floriandejonckheere.be>
- *
- * */
-label,
-legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 600;
-}
-fieldset {
-  padding: 0;
-  border-width: 0;
-}
-label > .label-body {
-  display: inline-block;
-  margin-left: .5rem;
-  font-weight: normal;
-}
-/**
- * lists.less - Lists
- *
- * Florian Dejonckheere <florian@floriandejonckheere.be>
- *
- * */
-ul {
-  list-style: circle inside;
-}
-ol {
-  list-style: decimal inside;
-  padding-left: 0;
-  margin-top: 0;
-}
-ul {
-  padding-left: 0;
-  margin-top: 0;
-}
-ul ul,
-ul ol {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%;
-}
-ol ol,
-ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%;
-}
-li {
-  margin-bottom: 1rem;
-}
-/**
- * spacing.css - Spacing
+ * spacing - Spacing
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
@@ -505,27 +536,7 @@ form {
   margin-bottom: 2.5rem;
 }
 /**
- * tables.less - Tables
- *
- * Florian Dejonckheere <florian@floriandejonckheere.be>
- *
- * */
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #e1e1e1;
-}
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-th:last-child,
-td:last-child {
-  padding-right: 0;
-}
-/**
- * input.css - Text-like input elements
+ * input - Text-like input elements
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
@@ -592,7 +603,7 @@ select:focus {
   outline: 0;
 }
 /**
- * utilities.css - Utilities
+ * utilities - Utilities
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
  *
@@ -620,18 +631,6 @@ select:focus {
 .switch input[type="checkbox"] ~ label:before {
   background-color: #33c3f0;
   color: white;
-}
-/**
- * Activated elements
- *
- * */
-.button:active,
-.checkbox label:before,
-.radio label:before,
-.switch label:before,
-.switch .switch-button {
-  border-color: #33c3f0;
-  color: #33c3f0;
 }
 /**
  * Disabled elements

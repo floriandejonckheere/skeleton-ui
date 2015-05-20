@@ -8,15 +8,12 @@
 @import "variables.less";
 
 @import "base.less";
+@import "block.less";
 @import "grid.less";
 @import "typography.less";
 @import "animations.less";
 @import "button.less";
-@import "code.less";
-@import "form.less";
-@import "lists.less";
 @import "spacing.less";
-@import "tables.less";
 @import "input.less";
 @import "utilities.less";
 
@@ -29,19 +26,6 @@
 .switch input[type="checkbox"] ~ label:before {
   background-color: @primary-color;
   color: white;
-}
-
-/**
- * Activated elements
- *
- * */
-.button:active,
-.checkbox label:before,
-.radio label:before,
-.switch label:before,
-.switch .switch-button {
-  border-color: @primary-color;
-  color: @primary-color;
 }
 
 /**
