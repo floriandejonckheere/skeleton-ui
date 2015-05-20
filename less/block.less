@@ -15,20 +15,12 @@ ul {
 
 ol {
   list-style: decimal inside;
-  padding-left: 0;
-  margin-top: 0;
 }
 
-ul {
+ol, ul {
   padding-left: 0;
   margin-top: 0;
-  ul, ol {
-    margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%;
-  }
-}
 
-ol {
   ol, ul {
     margin: 1.5rem 0 1.5rem 3rem;
     font-size: 90%;
@@ -47,17 +39,15 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid @light-grey;
-}
+  border-bottom: 1px solid #E1E1E1;
 
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
+  &:first-child {
+    padding-left: 0;
+  }
 
-th:last-child,
-td:last-child {
-  padding-right: 0;
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 /**

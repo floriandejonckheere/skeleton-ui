@@ -76,20 +76,16 @@ ul {
 }
 ol {
   list-style: decimal inside;
-  padding-left: 0;
-  margin-top: 0;
 }
+ol,
 ul {
   padding-left: 0;
   margin-top: 0;
 }
-ul ul,
-ul ol {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%;
-}
 ol ol,
-ol ul {
+ul ol,
+ol ul,
+ul ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
 }
@@ -104,7 +100,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #E1E1E1;
 }
 th:first-child,
 td:first-child {
