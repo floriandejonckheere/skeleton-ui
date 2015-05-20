@@ -10,12 +10,14 @@
 @import "base.less";
 @import "binary.less";
 @import "block.less";
+@import "button.less";
 @import "grid.less";
 @import "typography.less";
-@import "animations.less";
-@import "button.less";
 @import "spacing.less";
 @import "input.less";
+@import "range.less";
+
+@import "animations.less";
 @import "utilities.less";
 
 /**
@@ -27,89 +29,6 @@
 .switch input[type="checkbox"] ~ label:before {
   background-color: @primary-color;
   color: white;
-}
-
-/**
- * Range
- *
- * */
-input[type="range"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-/* You cannot group -webkit and -moz styles, an invalid selector invalidates
- * the entire block of properties */
-/* WebKit */
-input[type="range"]::-webkit-slider-runnable-track,
-input[type="range"]::-webkit-slider-thumb {
-  background-color: white;
-  border: 1px solid @border-color;
-}
-
-input[type="range"]::-webkit-slider-runnable-track {
-  height: 5px;
-  border-radius: @global-radius;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  margin-top: -6px;
-}
-
-input[type="range"]:active::-webkit-slider-thumb {
-  border: 1px solid @primary-color;
-}
-
-input[type="range"].disabled::-webkit-slider-runnable-track,
-input[type="range"][disabled]::-webkit-slider-runnable-track,
-input[type="range"].disabled::-webkit-slider-thumb,
-input[type="range"][disabled]::-webkit-slider-thumb {
-  border-color: @light-grey;
-}
-
-/* FireFox */
-input[type="range"]::-moz-range-track,
-input[type="range"]::-moz-range-thumb {
-  background-color: white;
-  border: 1px solid @border-color;
-}
-input[type="range"]::-moz-range-track {
-  height: 5px;
-  border-radius: @global-radius;
-}
-
-input[type="range"]::-moz-range-thumb {
-  -moz-appearance: none;
-
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  margin-top: -6px;
-}
-
-input[type="range"]:active::-moz-range-thumb {
-  border: 1px solid @primary-color;
-}
-
-input[type="range"]:focus {
-  outline: none;
-}
-
-
-input[type="range"].vertical {
-  transform: rotate(270deg);
-}
-
-input[type="range"].disabled::-moz-range-thumb,
-input[type="range"][disabled]::-moz-range-thumb,
-input[type="range"].disabled::-moz-range-track,
-input[type="range"][disabled]::-moz-range-track {
-  border-color: @light-grey;
 }
 
 /**

@@ -300,6 +300,146 @@ pre > code {
   white-space: pre;
 }
 /**
+ * button - Buttons
+ *
+ * Florian Dejonckheere <florian@floriandejonckheere.be>
+ *
+ * */
+/**
+ * Regular buttons
+ *
+ * */
+.button,
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+.button:hover,
+button:hover {
+  color: #333333;
+  border-color: #888888;
+  outline: 0;
+}
+.button:focus,
+button:focus {
+  color: #333333;
+  border-color: #888888;
+  outline: 0;
+}
+.button:disabled,
+button:disabled {
+  color: #bfbfbf;
+  border-color: #e1e1e1;
+  cursor: not-allowed;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+  margin-bottom: 1rem;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  color: #333333;
+  border-color: #888888;
+  outline: 0;
+}
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333333;
+  border-color: #888888;
+  outline: 0;
+}
+input[type="submit"]:disabled,
+input[type="reset"]:disabled,
+input[type="button"]:disabled {
+  color: #bfbfbf;
+  border-color: #e1e1e1;
+  cursor: not-allowed;
+}
+/**
+ * Primary buttons
+ *
+ * */
+.button.button-primary,
+button.button-primary {
+  color: #ffffff;
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+.button.button-primary:hover,
+button.button-primary:hover {
+  color: #ffffff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+.button.button-primary:focus,
+button.button-primary:focus {
+  color: #ffffff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+input.button-primary[type="submit"],
+input.button-primary[type="reset"],
+input.button-primary[type="button"] {
+  color: #ffffff;
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+input.button-primary[type="submit"]:hover,
+input.button-primary[type="reset"]:hover,
+input.button-primary[type="button"]:hover {
+  color: #ffffff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+input.button-primary[type="submit"]:focus,
+input.button-primary[type="reset"]:focus,
+input.button-primary[type="button"]:focus {
+  color: #ffffff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+/**
  * grid - Grid system
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
@@ -532,163 +672,6 @@ p {
   margin-top: 0;
 }
 /**
- * skeleton-animations - Add animations to components
- *
- * Florian Dejonckheere <florian@floriandejonckheere.be>
- *
- * */
-.button,
-.checkbox label:before,
-.radio label:before,
-.alert,
-.input,
-.switch .switch-button {
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-}
-/**
- * button - Buttons
- *
- * Florian Dejonckheere <florian@floriandejonckheere.be>
- *
- * */
-/**
- * Regular buttons
- *
- * */
-.button,
-button {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbbbbb;
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0;
-}
-.button:hover,
-button:hover {
-  color: #333333;
-  border-color: #888888;
-  outline: 0;
-}
-.button:focus,
-button:focus {
-  color: #333333;
-  border-color: #888888;
-  outline: 0;
-}
-.button:disabled,
-button:disabled {
-  color: #bfbfbf;
-  border-color: #e1e1e1;
-  cursor: not-allowed;
-}
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbbbbb;
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0;
-  margin-bottom: 1rem;
-}
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: #333333;
-  border-color: #888888;
-  outline: 0;
-}
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #333333;
-  border-color: #888888;
-  outline: 0;
-}
-input[type="submit"]:disabled,
-input[type="reset"]:disabled,
-input[type="button"]:disabled {
-  color: #bfbfbf;
-  border-color: #e1e1e1;
-  cursor: not-allowed;
-}
-/**
- * Primary buttons
- *
- * */
-.button.button-primary,
-button.button-primary {
-  color: #ffffff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
-}
-.button.button-primary:hover,
-button.button-primary:hover {
-  color: #ffffff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
-}
-.button.button-primary:focus,
-button.button-primary:focus {
-  color: #ffffff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
-}
-input.button-primary[type="submit"],
-input.button-primary[type="reset"],
-input.button-primary[type="button"] {
-  color: #ffffff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
-}
-input.button-primary[type="submit"]:hover,
-input.button-primary[type="reset"]:hover,
-input.button-primary[type="button"]:hover {
-  color: #ffffff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
-}
-input.button-primary[type="submit"]:focus,
-input.button-primary[type="reset"]:focus,
-input.button-primary[type="button"]:focus {
-  color: #ffffff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
-}
-/**
  * spacing - Spacing
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
@@ -790,6 +773,83 @@ label > .label-body {
   font-weight: normal;
 }
 /**
+ * range - Range slider
+ *
+ * Florian Dejonckheere <florian@floriandejonckheere.be>
+ *
+ * */
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+input[type="range"]::-moz-range-track,
+input[type="range"]::-moz-range-thumb {
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: 4px;
+}
+input[type="range"]::-moz-range-track {
+  height: 5px;
+  border-radius: 4px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+input[type="range"][disabled]::-webkit-slider-runnable-track,
+input[type="range"][disabled]::-webkit-slider-thumb {
+  cursor: not-allowed;
+  border-color: #e1e1e1;
+}
+input[type="range"][disabled]::-moz-range-track,
+input[type="range"][disabled]::-moz-range-thumb {
+  cursor: not-allowed;
+  border-color: #e1e1e1;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"].vertical {
+  transform: rotate(270deg);
+}
+/**
+ * skeleton-animations - Add animations to components
+ *
+ * Florian Dejonckheere <florian@floriandejonckheere.be>
+ *
+ * */
+.button,
+.checkbox label:before,
+.radio label:before,
+.alert,
+.input,
+.switch .switch-button {
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+/**
  * utilities - Utilities
  *
  * Florian Dejonckheere <florian@floriandejonckheere.be>
@@ -818,74 +878,6 @@ label > .label-body {
 .switch input[type="checkbox"] ~ label:before {
   background-color: #33c3f0;
   color: white;
-}
-/**
- * Range
- *
- * */
-input[type="range"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-/* You cannot group -webkit and -moz styles, an invalid selector invalidates
- * the entire block of properties */
-/* WebKit */
-input[type="range"]::-webkit-slider-runnable-track,
-input[type="range"]::-webkit-slider-thumb {
-  background-color: white;
-  border: 1px solid #bbbbbb;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-  height: 5px;
-  border-radius: 4px;
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  margin-top: -6px;
-}
-input[type="range"]:active::-webkit-slider-thumb {
-  border: 1px solid #33c3f0;
-}
-input[type="range"].disabled::-webkit-slider-runnable-track,
-input[type="range"][disabled]::-webkit-slider-runnable-track,
-input[type="range"].disabled::-webkit-slider-thumb,
-input[type="range"][disabled]::-webkit-slider-thumb {
-  border-color: #e1e1e1;
-}
-/* FireFox */
-input[type="range"]::-moz-range-track,
-input[type="range"]::-moz-range-thumb {
-  background-color: white;
-  border: 1px solid #bbbbbb;
-}
-input[type="range"]::-moz-range-track {
-  height: 5px;
-  border-radius: 4px;
-}
-input[type="range"]::-moz-range-thumb {
-  -moz-appearance: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  margin-top: -6px;
-}
-input[type="range"]:active::-moz-range-thumb {
-  border: 1px solid #33c3f0;
-}
-input[type="range"]:focus {
-  outline: none;
-}
-input[type="range"].vertical {
-  transform: rotate(270deg);
-}
-input[type="range"].disabled::-moz-range-thumb,
-input[type="range"][disabled]::-moz-range-thumb,
-input[type="range"].disabled::-moz-range-track,
-input[type="range"][disabled]::-moz-range-track {
-  border-color: #e1e1e1;
 }
 /**
  * Dropdown
