@@ -6,11 +6,13 @@
  * */
 
 @import "variables.less";
+@import "colors.less";
 
 @import "base.less";
 @import "binary.less";
 @import "block.less";
 @import "button.less";
+@import "dropdown.less";
 @import "grid.less";
 @import "typography.less";
 @import "spacing.less";
@@ -19,89 +21,3 @@
 
 @import "animations.less";
 @import "utilities.less";
-
-/**
- * Colour
- *
- * */
-.badge,
-.alert,
-.switch input[type="checkbox"] ~ label:before {
-  background-color: @primary-color;
-  color: white;
-}
-
-/**
- * Dropdown
- *
- * */
-select {
-  padding-right: 30px;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-}
-
-select::-ms-expand {
-    display: none;
-}
-
-label.select {
-  display: inline;
-}
-
-label.select:after {
-  color: @dark-grey;
-  margin-left: -27.5px;
-  content: "\f0d7";
-  font-family: 'FontAwesome';
-}
-
-/**
- * Badge
- *
- * */
-.badge {
-  padding: .2rem .4rem;
-  margin: .5rem;
-  border-radius: @global-radius;
-
-  font-size: 10px;
-  font-weight: 800;
-}
-
-/**
- * Alert
- *
- * */
-.alert {
-  width: 100%;
-  padding: 1rem 1.5rem;
-  border-radius: @global-radius;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-
-  font-weight: 800;
-}
-
-.alert [data-toggle="dismiss"] {
-  color: white;
-}
-
-/**
- * Panel
- *
- * */
-.panel {
-  padding: 2rem 2rem;
-  margin: 0 .2rem;
-  border: 1px solid @border-color;
-  border-radius: @global-radius;
-  background-color: white;
-}

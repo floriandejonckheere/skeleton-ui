@@ -37,7 +37,7 @@
       </p>
 
       <h3>Showcase</h3>
-      <h5>The Grid</h5>
+      <h4>The Grid</h4>
       <p>
         The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.
       </p>
@@ -88,7 +88,7 @@
         </div>
       </div>
 
-      <h5>Typography</h5>
+      <h4>Typography</h4>
       <p>
         Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.
       </p>
@@ -102,12 +102,12 @@
           <h2 style="display: inline;">Heading</h2> <code>&lt;h1&gt;</code> 42rem<br>
           <h3 style="display: inline;">Heading</h3> <code>&lt;h1&gt;</code> 36rem<br>
           <h4 style="display: inline;">Heading</h4> <code>&lt;h1&gt;</code> 30rem<br>
-          <h5 style="display: inline;">Heading</h5> <code>&lt;h1&gt;</code> 24rem<br>
+          <h4 style="display: inline;">Heading</h4> <code>&lt;h1&gt;</code> 24rem<br>
           <h6 style="display: inline;">Heading</h6> <code>&lt;h1&gt;</code> 15rem<br>
         </div>
       </div>
 
-      <h5>Buttons</h5>
+      <h4>Buttons</h4>
       <p>
         Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class. Buttons can have a variety of descriptive colors.
       </p>
@@ -123,12 +123,11 @@
         <a href="javascript:void(0);" class="button">Regular</a>
         <a href="javascript:void(0);" class="button button-primary">Primary</a>
         <a href="javascript:void(0);" class="button button-success">Success</a>
-        <a href="javascript:void(0);" class="button button-info">Info</a>
         <a href="javascript:void(0);" class="button button-warning">Warning</a>
         <a href="javascript:void(0);" class="button button-danger">Danger</a>
       </div>
 
-      <h5>Checkboxes and radio buttons</h5>
+      <h4>Checkboxes and radio buttons</h4>
       <div class="row">
         <div class="six columns">
           <div class="checkbox">
@@ -174,7 +173,7 @@
         </div>
       </div>
 
-      <h5>Switches</h5>
+      <h4>Switches</h4>
       <div class="row">
         <div class="twelve columns">
           <div class="switch">
@@ -190,7 +189,6 @@
           </div>
 
           <div class="switch">
-            <!-- Use the 'disabled' attribute or add the 'disabled' class -->
             <input type="checkbox" id="switch-disabled" disabled>
             <span class="switch-button"></span>
             <label for="switch-disabled">Disabled switch</label>
@@ -204,38 +202,38 @@
         </div>
       </div>
 
-      <h5>Range</h5>
+      <h4>Range</h4>
       <div class="row">
         <div class="twelve columns">
           <input type="range" min="0" max="100" id="range-horiz">
           <input type="range" min="0" max="100" disabled>
-          <!-- Add the 'vertical' class for vertical range sliders -->
+
           <input type="range" min="0" max="100" class="vertical" id="range-vert">
           <input type="range" min="0" max="100" class="vertical" disabled>
         </div>
       </div>
 
-      <h5>Dropdown</h5>
+      <h4>Dropdown</h4>
       <div class="row">
         <label class="select">
           <select>
             <option>First option</option>
-            <option selected>Second option</option>
-            <option>Third option</option>
+            <option>Second option</option>
+            <option selected>Third option</option>
             <option>Fourth option</option>
             <option>Fifth option</option>
           </select>
         </label>
       </div>
 
-      <h5>Badges</h5>
+      <h4>Badges</h4>
       <p>
         Badges indicate extra attributes<span class="badge">new</span>
         <br>
         Custom colors on demand<span class="badge" style="background-color: red; vertical-align: super;">hot</span>
       </p>
 
-      <h5>Alerts</h5>
+      <h4>Alerts</h4>
       <p>
         <div class="alert">
           This is an alert. It informs the user that there is something requiring his attention.
@@ -247,14 +245,12 @@
         </div>
       </p>
 
-      <h5>Panels</h5>
+      <h4>Panels</h4>
       <div class="row">
         <div class="six columns">
           <div class="panel">
             <div class="row">
-              <div class="twelve columns">
-                This is a panel. You can put text, images, forms and many other elements in here. This text only serves to fill the space a bit.
-              </div>
+              This is a panel. You can put text, images, forms and many other elements in here. This text only serves to fill the space a bit.
             </div>
             <hr>
             <div class="row">
@@ -270,30 +266,22 @@
         <div class="six columns">
           <div class="panel">
             <div class="row">
-              <div class="twelve columns">
-                <h5>Sign in to continue</h5>
-                <div class="alert" style="background: red;">
-                  <i class="fa fa-exclamation-triangle"></i> Invalid username or password
-                  <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
-                </div>
+              <h5>Sign in to continue</h5>
+              <div class="alert" style="background: red;">
+                <i class="fa fa-exclamation-triangle"></i> Invalid username or password
+                <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
               </div>
             </div>
             <div class="row">
-              <div class="twelve columns">
-                <label for="username">Username</label>
-                <input type="text" class="u-full-width" placeholder="Username" id="username" name="username">
-              </div>
+              <label for="username">Username</label>
+              <input type="text" class="u-full-width" placeholder="Username" id="username" name="username">
             </div>
             <div class="row">
-              <div class="twelve columns">
-                <label for="password">Password</label>
-                <input type="password" class="u-full-width" placeholder="Password" id="password" name="password">
-              </div>
+              <label for="password">Password</label>
+              <input type="password" class="u-full-width" placeholder="Password" id="password" name="password">
             </div>
             <div class="row">
-              <div class="twelve columns">
-                <input type="button" class="button button-primary" value="Sign in">
-              </div>
+              <input type="button" class="button button-primary" value="Sign in">
             </div>
           </div>
         </div>

@@ -77,7 +77,7 @@
 
 .checkbox label:before {
   content: "\f00c";
-  font-family: 'FontAwesome';
+  font-family: @font-awesome;
 }
 
 .radio label:before {
@@ -143,6 +143,7 @@
   }
 
   input[type="checkbox"]:checked ~ label:before {
+    background-color: @primary-color;
     color: white;
   }
 }

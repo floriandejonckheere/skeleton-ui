@@ -1,6 +1,6 @@
 {
   "name": "skeleton-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight CSS toolkit built on Skeleton",
   "main": [
     "css/skeleton-ui.min.css",

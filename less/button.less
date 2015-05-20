@@ -47,6 +47,11 @@ button {
     border-color: @light-grey;
     cursor: not-allowed;
   }
+
+  &.button-primary { .color-scheme(@primary-color); }
+  &.button-success { .color-scheme(@success-color); }
+  &.button-warning { .color-scheme(@warning-color); }
+  &.button-danger  { .color-scheme(@danger-color); }
 }
 
 input {
@@ -55,36 +60,12 @@ input {
   &[type="button"] {
     .button;
   }
-}
 
-/**
- * Primary buttons
- *
- * */
-
-.button.button-primary,
-button.button-primary {
-  color: @white;
-  background-color: @primary-color;
-  border-color: @primary-color;
-
-  &:hover {
-    color: @white;
-    background-color: @link-color;
-    border-color: @link-color;
-  }
-
-  &:focus {
-    color: @white;
-    background-color: @link-color;
-    border-color: @link-color;
-  }
-}
-
-input.button-primary {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    .button.button-primary;
+  &.button-primary {
+    &[type="submit"],
+    &[type="reset"],
+    &[type="button"] {
+      .button.button-primary;
+    }
   }
 }

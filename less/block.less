@@ -69,3 +69,53 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre;
 }
+
+/**
+ * Badge
+ *
+ * */
+.badge {
+  background-color: @primary-color;
+  color: @white;
+
+  padding: .2rem .4rem;
+  margin: .5rem;
+  border-radius: @global-radius;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+/**
+ * Alert
+ *
+ * */
+.alert {
+  background-color: @primary-color;
+  color: @white;
+
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: @global-radius;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+
+  font-weight: 800;
+
+  [data-toggle="dismiss"] {
+    color: white;
+  }
+}
+
+/**
+ * Panel
+ *
+ * */
+.panel {
+  padding: 2rem 2rem;
+  margin: 0 .2rem;
+  border: 1px solid @border-color;
+  border-radius: @global-radius;
+  background-color: white;
+}
