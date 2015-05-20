@@ -28,6 +28,7 @@ button {
   border: 1px solid @border-color;
   cursor: pointer;
   box-sizing: border-box;
+  outline: 0;
 
   &:hover {
     color: @dark-grey;
@@ -39,6 +40,12 @@ button {
     color: @dark-grey;
     border-color: lighten(@dark-grey, 33.3%);
     outline: 0;
+  }
+
+  &:disabled {
+    color: @disabled;
+    border-color: @light-grey;
+    cursor: not-allowed;
   }
 }
 
